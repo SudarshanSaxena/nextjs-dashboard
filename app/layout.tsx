@@ -1,3 +1,5 @@
+import '@/app/ui/global.css';
+import { inter, jacques_francois } from './ui/fonts';
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +7,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${jacques_francois.className} antialiased`}>{children}</body>
     </html>
   );
 }
